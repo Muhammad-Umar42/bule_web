@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.main{
+    background-color:rgb(247, 234, 219);
+    display: flex;
+    line-height: 50px;
+}
+.child:nth-child(4) ol{
+    display: flex;
+    list-style: none;
+}
+.child:nth-child(4) li{
+    flex-grow: 1;
+}
+
+.child:nth-child(1){
+    flex-grow: 1;
+}
+.child:nth-child(2){
+    flex-grow: 0;
+    color: blue;
+}
+.child:nth-child(3){
+    flex-grow: 2;
+}
+
+.child:nth-child(4){
+    flex-grow: 3;
+}
+.child:nth-child(5){
+    flex-grow: 1;
+    margin: auto;
+}
+.child:nth-child(5) input{
+    padding: 5px 15px;
+}
+@keyframes mlx{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+#mlk{
+    animation: mlx 1s linear 0s;
+}
+.section{
+    background-image: url(./image/blue.jfif);
+    height: 100vh;
+    background-position: center;
+    background-size: cover
+}
+.section h1{
+    text-align: center;
+    position: relative;
+    top: 50vh;
+    color: whitesmoke;
+    font-size: xx-large;
+    transition: 1s linear 0s;
+}
+.section h1:hover{
+    color: rgb(255, 206, 147);
+    font-size: xxx-large;
+}
+@media screen and (max-width:670px){
+    .child:nth-child(4){
+        display: none;
+    }
+}
+.section img{
+    border-radius: 150px;
+    width: 15%;
+    position: relative;
+    left: 5vw;
+    animation: mlx 2s linear 0s;
+    animation-iteration-count: infinite;
+}
+.main_2{
+    display: flex;
+    justify-content: space-evenly;
+}
+.main_2 img{
+    border-radius: 100%;
+    height: 70px;
+    position: relative;
+    top: -20px;
+}
+.card{
+    text-align: center;
+    width: 20%;
+    box-shadow: 1px 1px 5px rgb(168, 166, 166);
+    position: relative;
+    top: 15px;
+    padding: 25px 5px;
+    border-radius: 10%;
+    transition: 0.5s linear 0s;
+}
+.card:hover{
+    transform: scale(1.1);
+    background-color: rgb(247, 234, 219);
+}

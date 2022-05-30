@@ -1,2 +1,6 @@
 i am here
+<<<<<<< HEAD
 and master
+=======
+it's copy
+>>>>>>> aaa
